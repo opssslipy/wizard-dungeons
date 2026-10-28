@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#1a1426" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Подземелья" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" type="image/png" href="./icon-192.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <title>Чародейские подземелья</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #0d0a14; overflow: hidden; }
+      body { touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+      #game { width: 100vw; height: 100vh; }
+      canvas { display: block; }
+      /* на телефоне в вертикальном положении просим повернуть экран */
+      #rotate {
+        display: none; position: fixed; inset: 0; z-index: 10; background: #1a1426; color: #fff;
+        font: 20px/1.5 sans-serif; text-align: center; align-items: center; justify-content: center; padding: 24px;
+      }
+      @media (orientation: portrait) and (max-width: 800px) { #rotate { display: flex; } }
+    </style>
+    <script type="module" crossorigin src="./assets/index-Byc-7KnX.js"></script>
+  </head>
+  <body>
+    <div id="game"></div>
+    <div id="rotate">Поверните телефон горизонтально,<br />так играть удобнее</div>
+  </body>
+</html>
