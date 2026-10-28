@@ -16,21 +16,17 @@
     <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
     <title>Чародейские подземелья</title>
     <style>
-      html, body { margin: 0; height: 100%; background: #0d0a14; overflow: hidden; }
-      body { touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
-      #game { width: 100vw; height: 100vh; }
-      canvas { display: block; }
-      /* на телефоне в вертикальном положении просим повернуть экран */
-      #rotate {
-        display: none; position: fixed; inset: 0; z-index: 10; background: #1a1426; color: #fff;
-        font: 20px/1.5 sans-serif; text-align: center; align-items: center; justify-content: center; padding: 24px;
+      html, body {
+        margin: 0; width: 100%; height: 100%; background: #0d0a14; overflow: hidden;
+        position: fixed; inset: 0; overscroll-behavior: none;
       }
-      @media (orientation: portrait) and (max-width: 800px) { #rotate { display: flex; } }
+      body { touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+      #game { position: fixed; left: 0; top: 0; width: 100vw; height: 100dvh; }
+      canvas { display: block; }
     </style>
-    <script type="module" crossorigin src="./assets/index-Byc-7KnX.js"></script>
+    <script type="module" crossorigin src="./assets/index-C5uV5fPN.js"></script>
   </head>
   <body>
     <div id="game"></div>
-    <div id="rotate">Поверните телефон горизонтально,<br />так играть удобнее</div>
   </body>
 </html>
